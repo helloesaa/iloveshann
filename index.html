@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh no, what is that?!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container" id="inputContainer">
+            <h1>Hei, please tell me what's your name</h1>
+            <form id="nameForm">
+                <input type="text" id="name" placeholder="It's my name" required>
+            </form>
+            <div id="errorMessage" style="color: red; display: none;"></div> 
+        </div>
+
+        <div class="note-container" id="noteContainer">
+            <h1>This is for you, my beautiful shan. </h1>
+            <div id="stickyNotesContainer" class="sticky-notes-grid"></div>
+
+            <button id="openModal">click for more love</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Today, I just want to tell you how special you are to me. You are like the sunlight in the morning, always bringing warmth and happiness into my life. I’m so grateful to have you in my life. Every moment with you is so precious, and I can’t wait to create more beautiful memories together. I love you, my dear, always and forever.</p>
+                </div>
+            </div>
+            <div id="thankYouMessage">
+                <h2>I love you sayangku, <span id="userName"></span>!</h2>
+            </div>
+
+            <button id="backButton" class="back-button">Back</button>
+
+            <button id="reasonsButton" class="reasons-button">Next</button>
+        </div>
+
+        <div class="reasons-container" id="reasonsContainer">
+            <h1>100 Reasons Why I Love You, babe</h1>
+            <ol id="reasonsList">
+            </ol>
+
+            <button id="backFromReasonsButton" class="back-button">Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
